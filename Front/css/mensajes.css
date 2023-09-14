@@ -1,4 +1,24 @@
-body{margin-top:20px;}
+body {
+    background: linear-gradient(-45deg, pink, rgb(109, 24, 109), pink);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+    margin-top: 20px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 .chat-search-box {
     -webkit-border-radius: 3px 0 0 0;
@@ -53,6 +73,7 @@ body{margin-top:20px;}
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    background-color: pink;
 }
 
 .users {
@@ -163,9 +184,11 @@ body{margin-top:20px;}
         width: 30px;
         height: 30px;
     }
+
     .users .person p.name-time {
         display: none;
     }
+
     .users .person p.name-time .time {
         display: none;
     }
@@ -180,6 +203,7 @@ body{margin-top:20px;}
     -webkit-border-radius: 0 3px 0 0;
     -moz-border-radius: 0 3px 0 0;
     border-radius: 0 3px 0 0;
+    background-color: pink;
 }
 
 .selected-user span {
@@ -193,6 +217,12 @@ body{margin-top:20px;}
 .chat-container {
     position: relative;
     padding: 1rem;
+    background-image: url(C:/POI/Imagenes/trenHonkai.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
 }
 
 .chat-container li.chat-left,
@@ -219,14 +249,14 @@ body{margin-top:20px;}
     justify-content: flex-end;
 }
 
-.chat-container li.chat-right > .chat-avatar {
+.chat-container li.chat-right>.chat-avatar {
     margin-left: 20px;
     margin-right: 0;
 }
 
 .chat-container li .chat-name {
     font-size: .75rem;
-    color: #999999;
+    color: white;
     text-align: center;
 }
 
@@ -252,11 +282,11 @@ body{margin-top:20px;}
     border-color: transparent #ffffff transparent transparent;
 }
 
-.chat-container li.chat-right > .chat-text {
+.chat-container li.chat-right>.chat-text {
     text-align: right;
 }
 
-.chat-container li.chat-right > .chat-text:before {
+.chat-container li.chat-right>.chat-text:before {
     right: -20px;
     border-color: transparent transparent transparent #ffffff;
     left: inherit;
@@ -273,36 +303,42 @@ body{margin-top:20px;}
     margin: 0 0 0 15px;
 }
 
-.chat-container li .chat-hour > span {
+.chat-container li .chat-hour>span {
     font-size: 16px;
     color: #9ec94a;
 }
 
-.chat-container li.chat-right > .chat-hour {
+.chat-container li.chat-right>.chat-hour {
     margin: 0 15px 0 0;
 }
 
 @media (max-width: 767px) {
+
     .chat-container li.chat-left,
     .chat-container li.chat-right {
         flex-direction: column;
         margin-bottom: 30px;
     }
+
     .chat-container li img {
         width: 32px;
         height: 32px;
     }
+
     .chat-container li.chat-left .chat-avatar {
         margin: 0 0 5px 0;
         display: flex;
         align-items: center;
     }
+
     .chat-container li.chat-left .chat-hour {
         justify-content: flex-end;
     }
+
     .chat-container li.chat-left .chat-name {
         margin-left: 5px;
     }
+
     .chat-container li.chat-right .chat-avatar {
         order: -1;
         margin: 0 0 5px 0;
@@ -311,13 +347,16 @@ body{margin-top:20px;}
         justify-content: right;
         flex-direction: row-reverse;
     }
+
     .chat-container li.chat-right .chat-hour {
         justify-content: flex-start;
         order: 2;
     }
+
     .chat-container li.chat-right .chat-name {
         margin-right: 5px;
     }
+
     .chat-container li .chat-text {
         font-size: .8rem;
     }
@@ -338,6 +377,7 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 .card {
     border: 0;
     background: #f4f5fb;
