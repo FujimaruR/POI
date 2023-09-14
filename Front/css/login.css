@@ -1,0 +1,59 @@
+.login {
+    min-height: 100vh;
+  }
+  
+  .bg-image {
+    background-image: url('https://wallpapers.com/images/hd/waifu-fbnxojktzuho5g3a.jpg');
+    background-size: cover;
+    background-position: fill ;
+    border-right: 3px solid black;
+  }
+  
+  .login-heading {
+    font-weight: bold;
+    color: black;
+  }
+
+  .login-subheader {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    background-color: purple;
+    border-color: black;
+  }
+
+  .btn-login:hover{
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    background-color: rgb(184, 140, 147);
+    border-color: white;
+  }
+
+  .login-RegisterHL{
+    color: black;
+    text-decoration-line: underline;
+  }
+
+  .login-Logo {
+    display: flex;
+    max-width: 20rem;
+    min-width: 20rem;
+    min-height: 20rem;
+    max-height: 20rem;
+  }
+
+  span{
+    color: black;
+    font-weight: bolder;
+  
+  }
+
+  body{
+    background-color: pink;
+  }
