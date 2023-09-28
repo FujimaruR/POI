@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(-45deg, rgb(255, 177, 190), rgb(91, 100, 231), rgb(255, 192, 192));
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+ .btn-registro {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    background-color: purple;
+    border-color: black;
+  }
+
+  .btn-registro:hover{
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    background-color: rgb(184, 140, 147);
+    border-color: white;
+  }
+
+  .cuerpo-form{
+    background-color: pink;
+    color: black;
+    border: 1px solid black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .header-form {
+    background-color: rgb(255, 136, 156);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bolder;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .Label-forms {
+    font-weight: bolder;
+    font-size: medium;
+    
+  }
